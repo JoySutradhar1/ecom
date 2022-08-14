@@ -8,3 +8,11 @@ function closeNav() {
     document.getElementById("opBtn").style.display= "block";
 }
 
+
+function productDetails(){
+    document.getElementById("productContainer").style.display="none"
+    document.getElementById("productDetails").style.display="flex";
+    
+}
+
+

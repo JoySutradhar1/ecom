@@ -50,7 +50,7 @@ nav ul li{
     margin: 0 1rem;
     cursor: pointer;
 }
-nav ul li a{
+nav a{
     text-decoration: none;
     color: white;
 }
@@ -247,6 +247,7 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
 
@@ -495,4 +496,145 @@ i{
     color: black;
     cursor: pointer;
 }
+/* Product Details */
+.product-details{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.product-details img{
+    height: 400px;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.product-details .p-details{
+    min-width: 400px;
+    max-width: 500px;
+    padding-left:30px;
+    display: flex;
+    flex-direction: column;
+}
+.product-details select{
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.product-details input{
+    margin-top: 10px;
+    height: 40px;
+    width: 90px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.product-details button{
+    color: #e2dddd;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px 30px ;
+    padding: 10px;
+    background-color: rgb(38, 112, 87);
+}
+/* -----------------------about us */
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+}
+.about-container img{
+    height: 400px;
+    width: 480px;
+}
+.details-us{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-all .explore-more{
+    height: 180px;
+    padding: 5px;
+}
+@media only screen and (max-width: 650px){
+    .header-all .explore-more{
+        height: 170px;
+        background-size:100% 100% ;
+        padding: 5%;
+    }
+}
+
+.contact-map{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:450px;
+    gap: 10px;
+}
+.contact-details ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li{
+    list-style: none;
+}
+
+
+.gmap_canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:452px;
+}
+.gmap_canvas iframe{
+    height: 450px;
+    width: 450px;
+    border: 1px solid black;
+}
+.message-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+.message-us form{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.message-us input{
+    height: 40px;
+}
+.message-us textarea{
+    height: 90px;
+    padding: 4px;
+}
+.message-us .submit{
+    width: 80px;
+    font-weight: bold;
+    background-color: #096479;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 
