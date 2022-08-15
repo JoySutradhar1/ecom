@@ -309,6 +309,17 @@ nav a{
     height: 180px;
     padding: 5px;
 }
+
+#fproduct{
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ecf0fa
+}
 @media only screen and (max-width: 650px){
     .shop-page .explore-more{
         height: 170px;
@@ -418,7 +429,7 @@ i{
     border: none;
 }
 .home-footer{
-    padding: 40px;
+    padding: 5%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -484,6 +495,7 @@ i{
     justify-content: center;
 }
 .next-page{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,6 +582,10 @@ i{
         background-size:100% 100% ;
         padding: 5%;
     }
+    .about-container img{
+        height: 300ox;
+        width: 350px;
+    }
 }
 
 .contact-map{
@@ -634,7 +650,84 @@ li{
     border: none;
     cursor: pointer;
 }
+@media only screen and (max-width: 650px){
+    .gmap_canvas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:452px;
+    }
+    .gmap_canvas iframe{
+        height: 350px;
+        width: 350px;
+        border: 1px solid black;
+    }
+}
+/*----------------- Cart Start----------------- */
 
+.table-container{
+    overflow-x:auto;
+    padding: 10px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid gray;
+    margin-top: 5%;
+    
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+table img{
+    height: 70px;
+    border: 1px solid gray;
+    border-radius: 5px;
 
+}
+table input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.fa-xmark{
+    cursor: pointer;
+}
 
+.coupon-n-total{
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.coupon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.coupon input{
+    height: 30px;
+    margin-left: 2px;
+}
+.apply{
+    background-color: #096479;
+    border: none;
+    width: 50px;
+    color: #dddddd;
+    font-weight: bold;
+}
 
+.cart-total button{
+    height: 30px;
+    border: none;
+    background-color: #096479;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 5px;
+    color:white;
+    font-weight: bold;
+}
